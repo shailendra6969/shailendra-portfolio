@@ -1,0 +1,878 @@
+{
+  "_readme": "Single source of truth for the portfolio and the 'Ask my AI' assistant. The site renders ONLY facts with status 'confirmed'. Set status to 'confirmed' only when you can show evidence. Entries marked 'needs_confirmation' or 'unverified' stay in the file but are never rendered and never answer a chat question. Every fact must carry: id, claim, evidence_type (repo/demo/resume/none), link, status.",
+  "profile": {
+    "name": "Shailendra Khandekar",
+    "headline": "Data Scientist | Machine Learning | Agentic AI",
+    "tagline": "I turn messy real-world data into models you can trust.",
+    "bio": "Data scientist specializing in machine learning, computer vision, and quality validation pipelines for high-volume video data. I focus on data integrity, rigorous error analysis, and classification models that hold up under real-world scrutiny.",
+    "availability": "Open to Full-Time Roles (On-site / Hybrid / Remote)",
+    "location": "Greater Bengaluru Area · Open to Full-Time Roles",
+    "github": "https://github.com/shailendra6969",
+    "github_label": "github.com/shailendra6969",
+    "linkedin": "https://www.linkedin.com/in/shailendra-khandekar-/",
+    "linkedin_label": "linkedin.com/in/shailendra-khandekar-",
+    "email": "shailendrakhandekar114@gmail.com",
+    "resume": "assets/resume.pdf"
+  },
+  "achievements": [
+    {
+      "text": "10,000+ hours of manufacturing video data validated & quality-checked",
+      "fact_id": "cv-video-qc"
+    },
+    {
+      "text": "94% classifier accuracy & 0.87 churn recall across 6 model evaluations (pre-fix notebook output)",
+      "fact_id": "churn-result"
+    },
+    {
+      "text": "2,000+ monthly records audited across 15+ categories at NoBroker Technologies",
+      "fact_id": "exp-nobroker"
+    }
+  ],
+  "scanner": {
+    "label": "QC pipeline inspection · Demo frames, not employer data",
+    "caption": "QC pipeline inspection · Demo frames, not employer data"
+  },
+  "churn_business_note": "A 0.87 recall (pre-fix notebook output) catches about 24 more churners than Random Forest across 610 churned test cases — targeting the customers who actually leave matters more than tied 94% accuracy.",
+  "proof": [
+    "cv-video-qc",
+    "cv-stack",
+    "cloud"
+  ],
+  "facts": [
+    {
+      "id": "cv-video-qc",
+      "claim": "Processed and quality-checked 10,000+ hours of manufacturing video data.",
+      "category": "computer_vision",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Video data QC",
+        "Dataset validation"
+      ],
+      "evidence_type": "resume",
+      "link": "#case-cv",
+      "status": "confirmed",
+      "note": "Confirmed by the brief, which specifies this figure for the proof strip."
+    },
+    {
+      "id": "cv-validation",
+      "claim": "Worked on annotation and data validation, error analysis and dataset quality for manufacturing computer vision data.",
+      "category": "computer_vision",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Annotation QA",
+        "Error analysis",
+        "Data validation"
+      ],
+      "evidence_type": "resume",
+      "link": "#case-cv",
+      "status": "confirmed",
+      "note": "Confirmed by the brief as case study 1 content."
+    },
+    {
+      "id": "cv-stack",
+      "claim": "Used Python, OpenCV, and CNN models in TensorFlow/Keras for computer vision work.",
+      "category": "computer_vision",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Python",
+        "OpenCV",
+        "TensorFlow/Keras",
+        "CNNs"
+      ],
+      "evidence_type": "resume",
+      "link": "#case-cv",
+      "status": "confirmed",
+      "note": "Confirmed by the brief as case study 1 stack."
+    },
+    {
+      "id": "cloud",
+      "claim": "Managed datasets on AWS and Google Cloud.",
+      "category": "cloud",
+      "skill_group": "Databases and cloud",
+      "tags": [
+        "AWS",
+        "Google Cloud"
+      ],
+      "evidence_type": "resume",
+      "link": "#case-cv",
+      "status": "confirmed",
+      "note": "Confirmed by the brief, which specifies the cloud proof strip. No specific service names were provided, so none are claimed."
+    },
+    {
+      "id": "repo-churn",
+      "claim": "Has a public repository on bank customer churn prediction (Jupyter Notebook).",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Jupyter",
+        "Git/GitHub"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Repo contents opened and reviewed directly. Detailed classification and feature engineering notebook."
+    },
+    {
+      "id": "churn-data",
+      "claim": "Cleaned 10,002 raw rows down to 9,996 by resolving missing values and removing 2 duplicate rows before modelling.",
+      "category": "machine_learning",
+      "skill_group": "Data analysis",
+      "tags": [
+        "Pandas",
+        "Data cleaning",
+        "Deduplication"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook outputs (10,002 rows -> 2 duplicates -> 9,996 x 14)."
+    },
+    {
+      "id": "churn-eda",
+      "claim": "Ran EDA on churn by geography, balance, number of products, card ownership and active status, with cross-tabbed exit counts.",
+      "category": "machine_learning",
+      "skill_group": "Data analysis",
+      "tags": [
+        "EDA",
+        "Segmentation",
+        "Cross-tab analysis"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook cells 16-22."
+    },
+    {
+      "id": "churn-features",
+      "claim": "Engineered six features: balance-to-salary, tenure-to-age, balance x age, products x age, balance-to-age and balance-to-products.",
+      "category": "machine_learning",
+      "skill_group": "Data analysis",
+      "tags": [
+        "Feature engineering"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook cell 23."
+    },
+    {
+      "id": "churn-cluster",
+      "claim": "Segmented customers with K-Means (k=4) and projected the clusters to 2D with PCA for inspection.",
+      "category": "machine_learning",
+      "skill_group": "Data analysis",
+      "tags": [
+        "K-Means",
+        "PCA"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook cells 29-31."
+    },
+    {
+      "id": "churn-models",
+      "claim": "Random Forest, tuned SVM, Bagging and Gradient Boosting all reached 94% accuracy on a 2,999-row test set (pre-fix notebook output); the tuned SVM found the most churned customers with 0.87 recall (pre-fix notebook output).",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "scikit-learn",
+        "Random Forest",
+        "SVM (GridSearchCV)",
+        "Gradient Boosting",
+        "Voting/Bagging"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook cells 33-42.",
+      "metrics": [
+        {
+          "model": "Random Forest",
+          "accuracy": "0.94",
+          "churn_recall": "0.83",
+          "note": "class-1 f1 0.84"
+        },
+        {
+          "model": "SVM (tuned, C=1, rbf)",
+          "accuracy": "0.94",
+          "churn_recall": "0.87",
+          "note": "best churn recall; GridSearchCV 5-fold"
+        },
+        {
+          "model": "Logistic Regression",
+          "accuracy": "0.92",
+          "churn_recall": "0.86",
+          "note": "churn precision 0.77"
+        },
+        {
+          "model": "Voting (SVM+LR+RF)",
+          "accuracy": "0.93",
+          "churn_recall": "0.86",
+          "note": "hard voting"
+        },
+        {
+          "model": "Bagging (RF, 50 est.)",
+          "accuracy": "0.94",
+          "churn_recall": "0.84",
+          "note": "bagging accuracy 0.9366"
+        },
+        {
+          "model": "Gradient Boosting",
+          "accuracy": "0.94",
+          "churn_recall": "0.86",
+          "note": "gb accuracy 0.9353"
+        }
+      ]
+    },
+    {
+      "id": "churn-result",
+      "claim": "Random Forest, tuned SVM, Bagging and Gradient Boosting all reached 94% accuracy on a 2,999-row test set (pre-fix notebook output); the tuned SVM found the most churned customers with 0.87 recall (pre-fix notebook output).",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Model evaluation",
+        "Confusion matrix",
+        "ROC curve"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook classification reports. Support: 2,389 stayed / 610 churned."
+    },
+    {
+      "id": "churn-takeaway",
+      "claim": "Business takeaway: four models tie at 94% accuracy (pre-fix notebook output), so accuracy is not the deciding factor — the tuned SVM catches 0.87 of churners (pre-fix notebook output) against Random Forest's 0.83, about 24 more of the 610 churned customers per run.",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Business interpretation",
+        "Cost-sensitive ranking"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Derived arithmetic from the notebook's classification reports: (0.87 - 0.83) x 610 support = 24.4."
+    },
+    {
+      "id": "churn-imbalance",
+      "claim": "Tested SMOTE, random undersampling and balanced class weights against the imbalanced churn target.",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "SMOTE",
+        "Undersampling",
+        "Class weights"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook cells 43-47."
+    },
+    {
+      "id": "churn-fix",
+      "claim": "The notebook derives IsActiveMember and HasCrCard from the Exited label; I would rebuild those as pre-exit features before shipping this model.",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Leakage review"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "status": "confirmed",
+      "note": "Read from notebook cell 22. Stated as a forward-looking fix, not as work already done."
+    },
+    {
+      "id": "experience-companies",
+      "claim": "Work experience includes Data Density Pvt. Ltd. (Data Scientist, Full-time), NoBroker Technologies (Data Operations Intern), Caledon Technologies (Pricing Analyst, Freelance), and DaveAI / Sociograph (Business Analyst – Operations, Freelance).",
+      "category": "experience",
+      "skill_group": "",
+      "tags": [
+        "Data Density",
+        "NoBroker",
+        "Caledon",
+        "DaveAI",
+        "Sociograph",
+        "Experience",
+        "Work history"
+      ],
+      "evidence_type": "resume",
+      "link": "#experience",
+      "status": "confirmed",
+      "note": "Confirmed by user: Data Density (02/2024–06/2026, Full-time), NoBroker (12/2023–02/2024, Intern), Caledon (2025, Freelance), DaveAI (2025, Freelance)."
+    },
+    {
+      "id": "project-agentic-ai",
+      "claim": "In development: building an AI Decision Intelligence Platform incorporating Agent APIs, RAG vector retrieval, LangGraph, Claude Code, and PostgreSQL (not a public repo or production deployment).",
+      "category": "ai_systems",
+      "skill_group": "AI systems",
+      "tags": [
+        "Projects",
+        "AI",
+        "Agentic AI",
+        "LangGraph",
+        "RAG",
+        "PostgreSQL",
+        "In Development"
+      ],
+      "evidence_type": "resume",
+      "link": "https://github.com/shailendra6969",
+      "status": "confirmed",
+      "note": "Featured enterprise project from resume."
+    },
+    {
+      "id": "exp-datadensity",
+      "claim": "At Data Density Pvt Ltd (Data Scientist, Full-time), quality-checked 10,000+ hours of manufacturing video data, built CNN models in TensorFlow/Keras, and managed datasets on AWS and Google Cloud.",
+      "category": "experience",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Data Density",
+        "Video data QC",
+        "CNNs",
+        "AWS",
+        "Google Cloud",
+        "Computer Vision"
+      ],
+      "evidence_type": "resume",
+      "link": "#experience",
+      "status": "confirmed",
+      "note": "Full-time role from resume."
+    },
+    {
+      "id": "exp-nobroker",
+      "claim": "At NoBroker Technologies (Data Operations Intern), audited 2,000+ monthly records across 15+ categories, reviewed AI-generated content for consistency, and conducted structured data research.",
+      "category": "experience",
+      "skill_group": "Data analysis",
+      "tags": [
+        "NoBroker",
+        "Data Operations",
+        "Audit",
+        "AI content review",
+        "Verification"
+      ],
+      "evidence_type": "resume",
+      "link": "#experience",
+      "status": "confirmed",
+      "note": "Internship role from resume."
+    },
+    {
+      "id": "education-degree",
+      "claim": "Holds a Bachelor of Pharmacy from Dr. C. V. Raman University (2020–2024, CGPA 7.0) with coursework in Biostatistics, Quality Assurance, and Clinical Research.",
+      "category": "education",
+      "skill_group": "Data analysis",
+      "tags": [
+        "Education",
+        "Pharmacy",
+        "Biostatistics",
+        "Quality Assurance",
+        "Degree",
+        "University"
+      ],
+      "evidence_type": "resume",
+      "link": "#about",
+      "status": "confirmed",
+      "note": "Degree details from official resume."
+    },
+    {
+      "id": "ask-my-ai",
+      "claim": "Built this site's Ask my AI assistant: keyword retrieval over facts.json, grounding, evidence chips, and a refusal when nothing in the file supports the question.",
+      "category": "ai_systems",
+      "skill_group": "AI systems",
+      "tags": [
+        "Retrieval",
+        "Grounding",
+        "Evidence chips",
+        "Refusal design"
+      ],
+      "evidence_type": "demo",
+      "link": "#ask-my-ai",
+      "status": "confirmed",
+      "note": "Verifiable live on this page. In-browser retrieval and grounding demonstration."
+    },
+    {
+      "id": "repo-credit-risk",
+      "claim": "Has a public repository on credit risk analysis of loans (Jupyter Notebook).",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Jupyter"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/Credit-Risk-Analysis-of-loan",
+      "status": "needs_confirmation",
+      "note": "Public repository on loan credit risk analysis."
+    },
+    {
+      "id": "repo-cancer",
+      "claim": "Has a public repository applying logistic regression to cancer cell detection and prediction (Jupyter Notebook).",
+      "category": "machine_learning",
+      "skill_group": "ML and CV",
+      "tags": [
+        "Jupyter"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/Logestic-regresion-for-cancer-cell-detection-and-prediction",
+      "status": "needs_confirmation",
+      "note": "Supporting project only. Promote after review."
+    },
+    {
+      "id": "repo-vinda",
+      "claim": "Has a public data analysis project on a retail store (Vinda store).",
+      "category": "analytics",
+      "skill_group": "Data analysis",
+      "tags": [
+        "Data analysis"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/Data-Analysis-project-of-vinda-store",
+      "status": "needs_confirmation",
+      "note": "Contents not reviewed."
+    },
+    {
+      "id": "repo-powerbi",
+      "claim": "Has a public Power BI project.",
+      "category": "analytics",
+      "skill_group": "Data analysis",
+      "tags": [
+        "Power BI"
+      ],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/Power-BI-project-1",
+      "status": "needs_confirmation",
+      "note": "Contents not reviewed."
+    },
+    {
+      "id": "agentic-rag",
+      "claim": "Multi-agent or RAG system.",
+      "category": "ai_systems",
+      "skill_group": "AI systems",
+      "tags": [],
+      "evidence_type": "none",
+      "link": "",
+      "status": "unverified",
+      "note": "Not reviewed for a case study. 'Ask my AI' stands in as the local retrieval demo."
+    },
+    {
+      "id": "audio-scoring",
+      "claim": "Spoken audio grammar scoring project.",
+      "category": "audio_ml",
+      "skill_group": "Data analysis",
+      "tags": [],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/Grammer-scoring-engine",
+      "status": "needs_confirmation",
+      "note": "A repo now exists (Grammer-scoring-engine, Python, updated Nov 2025), so the earlier 'no evidence' note is stale. Review it and promote to confirmed if it holds up."
+    },
+    {
+      "id": "dynamic-pricing",
+      "claim": "Dynamic pricing project for fitness classes.",
+      "category": "analytics",
+      "skill_group": "Data analysis",
+      "tags": [],
+      "evidence_type": "repo",
+      "link": "https://github.com/shailendra6969/dynamic-pricing-strategies-for-fitness-classes",
+      "status": "needs_confirmation",
+      "note": "A repo now exists (updated Jun 2025), so the earlier 'no evidence' note is stale. Review it and promote to confirmed if it holds up."
+    }
+  ],
+  "architecture": [
+    {
+      "case_id": "case-cv",
+      "title": "Video Quality Validation Pipeline",
+      "nodes": [
+        {
+          "label": "Raw Ingestion",
+          "note": "10,000+ hrs video stream"
+        },
+        {
+          "label": "Keyframe Extraction",
+          "note": "OpenCV frame sampling"
+        },
+        {
+          "label": "Annotation QC",
+          "note": "Bounding box & label audit"
+        },
+        {
+          "label": "Defect Triage",
+          "note": "Occlusion & crop checks"
+        },
+        {
+          "label": "Validated Dataset",
+          "note": "Ships to CNN training"
+        }
+      ]
+    },
+    {
+      "case_id": "case-ml",
+      "title": "Churn Modeling & Tuning Pipeline",
+      "nodes": [
+        {
+          "label": "Data Cleaning",
+          "note": "Deduplicate & impute rows"
+        },
+        {
+          "label": "Feature Engineering",
+          "note": "6 interaction & ratio features"
+        },
+        {
+          "label": "Segmentation",
+          "note": "K-Means (k=4) & PCA"
+        },
+        {
+          "label": "Class Balancing",
+          "note": "SMOTE & class weights"
+        },
+        {
+          "label": "GridSearchCV SVM",
+          "note": "0.87 churn recall selection (pre-fix notebook output)"
+        }
+      ]
+    }
+  ],
+  "evidence": [],
+  "projects": [
+    {
+      "name": "Precision Pharma Analytics",
+      "subtitle": "Pharmaceutical Data Validation & Telemetry",
+      "status": "Public repository",
+      "link": "https://github.com/shailendra6969/precision-pharma",
+      "tags": []
+    },
+    {
+      "name": "Grammar Scoring Engine",
+      "subtitle": "NLP & Acoustic Evaluation Pipeline",
+      "status": "Public repository",
+      "link": "https://github.com/shailendra6969/Grammer-scoring-engine",
+      "tags": []
+    },
+    {
+      "name": "Bank Customer Churn Prediction",
+      "subtitle": "Class Imbalance Benchmark & Recall Optimization",
+      "problem": "Skewed class distribution (20.4% churn) caused default classifiers to overlook exiting customers despite surface 94% accuracy (pre-fix notebook output).",
+      "solution": "SMOTE tested, undersampling tested, class weights tested, six classifiers compared.",
+      "approach": "GridSearchCV applied to the SVM, PCA used to visualise clusters in 2D.",
+      "result": "Achieved 0.87 recall on churned customers (pre-fix notebook output), identifying about 24 additional at-risk accounts compared to baseline models.",
+      "tags": [
+        "scikit-learn",
+        "SMOTE",
+        "PCA",
+        "GridSearchCV",
+        "SVM"
+      ],
+      "status": "Public repository",
+      "link": "https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction",
+      "demo_link": ""
+    },
+    {
+      "name": "AI Decision Intelligence Platform",
+      "subtitle": "Agentic AI · RAG · LangGraph · PostgreSQL (In Development)",
+      "problem": "Exploring autonomous agent workflows and retrieval-augmented generation over structured and relational data.",
+      "solution": "In active development: building tool-calling agent graphs with LangGraph, RAG vector retrieval, and database integration.",
+      "approach": "Designing multi-turn workflows using LangGraph; connecting vector search with PostgreSQL.",
+      "result": "In development — experimental prototype; no public repository or production deployment.",
+      "tags": [
+        "Agentic AI",
+        "LangGraph",
+        "RAG",
+        "PostgreSQL"
+      ],
+      "status": "In development",
+      "link": "",
+      "demo_link": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Video Data QC",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "Annotation QA",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "Error Analysis",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "Dataset Validation",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "OpenCV",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "TensorFlow / Keras",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "CNNs",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "scikit-learn",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Random Forest",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "SVM · GridSearchCV",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Gradient Boosting",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Voting / Bagging",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Confusion Matrix · ROC",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "SMOTE · Class Weights",
+      "group": "ML and CV",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Pandas",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Data Cleaning",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "EDA",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Feature Engineering",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Segmentation",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "K-Means",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "PCA",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Jupyter",
+      "group": "Data analysis",
+      "evidence_ids": [
+        "case-ml"
+      ]
+    },
+    {
+      "name": "Agentic AI",
+      "group": "Currently building",
+      "evidence_ids": []
+    },
+    {
+      "name": "RAG",
+      "group": "Currently building",
+      "evidence_ids": []
+    },
+    {
+      "name": "LangGraph",
+      "group": "Currently building",
+      "evidence_ids": []
+    },
+    {
+      "name": "Retrieval",
+      "group": "AI systems",
+      "evidence_ids": [
+        "ask-my-ai"
+      ]
+    },
+    {
+      "name": "Grounding",
+      "group": "AI systems",
+      "evidence_ids": [
+        "ask-my-ai"
+      ]
+    },
+    {
+      "name": "Evidence Chips",
+      "group": "AI systems",
+      "evidence_ids": [
+        "ask-my-ai"
+      ]
+    },
+    {
+      "name": "Refusal Design",
+      "group": "AI systems",
+      "evidence_ids": [
+        "ask-my-ai"
+      ]
+    },
+    {
+      "name": "AWS",
+      "group": "Databases and cloud",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "group": "Databases and cloud",
+      "evidence_ids": [
+        "case-cv"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Data Density Pvt. Ltd.",
+      "role": "Data Scientist | Full-time",
+      "dates": "02/2024 – 06/2026 | Delhi (Remote)",
+      "bullets": [
+        "Quality-checked 10,000+ hours of manufacturing video data used for AI/ML training.",
+        "Prepared and validated large-scale datasets for machine learning and computer vision.",
+        "Performed data analysis, error analysis, and root-cause analysis across datasets.",
+        "Identified quality issues, inconsistencies, and edge cases in training data.",
+        "Developed and evaluated CNN classification models using Python, TensorFlow, Keras, and OpenCV.",
+        "Applied data validation and quality checks to improve dataset consistency.",
+        "Managed large datasets across AWS and Google Cloud."
+      ]
+    },
+    {
+      "company": "NoBroker Technologies Pvt. Ltd.",
+      "role": "Data Operations | Intern",
+      "dates": "12/2023 – 02/2024 | Bengaluru (Remote)",
+      "bullets": [
+        "Processed 2,000+ data and content records monthly across 15+ categories.",
+        "Audited records for accuracy, completeness, duplicates, and consistency.",
+        "Conducted data research and verification for structured datasets.",
+        "Identified data-quality issues and inconsistencies through systematic review."
+      ]
+    },
+    {
+      "company": "Caledon Technologies",
+      "role": "Pricing Analyst | Freelance",
+      "dates": "2025 | Bengaluru",
+      "bullets": [
+        "Worked on pricing and operational data related to North American car rental and fleet operations.",
+        "Analyzed location-level data to support pricing and operational decisions.",
+        "Researched new locations and market information for business analysis.",
+        "Worked with structured data and performed data validation and analysis."
+      ]
+    },
+    {
+      "company": "DaveAI (Sociograph)",
+      "role": "Business Analyst – Operations | Freelance",
+      "dates": "2025 | Bengaluru",
+      "bullets": [
+        "Supported operations and data-related tasks for virtual/AI solutions.",
+        "Worked on quality checks, operational logs, and UAT-related activities.",
+        "Reviewed outputs and identified issues and inconsistencies during testing.",
+        "Supported data and process validation for project workflows."
+      ]
+    }
+  ],
+  "refusal_message": "That's not something I've built or can show evidence for yet.",
+  "visuals": {
+    "scanner": {
+      "caption": "QC pipeline inspection · Demo frames, not employer data",
+      "source": "illustrative"
+    },
+    "good_bad_frames": {
+      "source": "illustrative",
+      "frame_07_caption": "ACCEPTED: CAM_01 // FRAME_007 · Part in-bounds, label matches pixels — passes QC",
+      "frame_11_caption": "REJECTED: CAM_01 // FRAME_011 · SURFACE_SCRATCH defect detected — fails QC"
+    },
+    "qc_metrics": {
+      "source": "illustrative",
+      "caption": "Statistical Model Diagnostics & Threshold Calibration: Confidence score distribution (Pass vs Reject) and operational threshold calibration."
+    },
+    "gradcam": {
+      "source": "illustrative",
+      "caption": "Grad-CAM Neural Attention & Defect Localization: Penultimate convolutional layer feature activations highlighting surface scratch defect."
+    }
+  },
+  "site": {
+    "url": "",
+    "_todo": "TODO: Set your public deployment URL here (e.g. https://shailendra6969.github.io/portfolio) before public deployment to generate absolute Open Graph and Twitter card URLs."
+  },
+  "github": {
+    "user": "shailendra6969",
+    "topic": "portfolio",
+    "featured_topic": "featured",
+    "featured_max": 6,
+    "initial_visible": 6,
+    "cache_minutes": 15,
+    "hide": []
+  }
+}

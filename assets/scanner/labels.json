@@ -1,0 +1,16 @@
+{
+  "frames": [
+    { "id": "f001", "class": "part_01", "status": "ACCEPTED", "bbox": { "x": 0.22, "y": 0.25, "w": 0.52, "h": 0.50 } },
+    { "id": "f002", "class": "part_02", "status": "ACCEPTED", "bbox": { "x": 0.28, "y": 0.20, "w": 0.44, "h": 0.55 } },
+    { "id": "f003", "class": "occluded", "status": "REJECTED", "bbox": { "x": 0.15, "y": 0.30, "w": 0.60, "h": 0.45 } },
+    { "id": "f004", "class": "part_04", "status": "ACCEPTED", "bbox": { "x": 0.20, "y": 0.28, "w": 0.55, "h": 0.48 } },
+    { "id": "f005", "class": "part_05", "status": "ACCEPTED", "bbox": { "x": 0.25, "y": 0.22, "w": 0.50, "h": 0.52 } },
+    { "id": "f006", "class": "mislabelled", "status": "REJECTED", "bbox": { "x": 0.18, "y": 0.26, "w": 0.58, "h": 0.50 } },
+    { "id": "f007", "class": "part_07", "status": "ACCEPTED", "bbox": { "x": 0.24, "y": 0.24, "w": 0.48, "h": 0.50 } },
+    { "id": "f008", "class": "part_08", "status": "ACCEPTED", "bbox": { "x": 0.26, "y": 0.22, "w": 0.50, "h": 0.54 } },
+    { "id": "f009", "class": "part_09", "status": "ACCEPTED", "bbox": { "x": 0.20, "y": 0.25, "w": 0.54, "h": 0.48 } },
+    { "id": "f010", "class": "part_10", "status": "ACCEPTED", "bbox": { "x": 0.22, "y": 0.24, "w": 0.52, "h": 0.50 } },
+    { "id": "f011", "class": "surface_scratch", "status": "REJECTED", "bbox": { "x": 0.35, "y": 0.38, "w": 0.30, "h": 0.25 } },
+    { "id": "f012", "class": "part_12", "status": "ACCEPTED", "bbox": { "x": 0.24, "y": 0.22, "w": 0.48, "h": 0.52 } }
+  ]
+}

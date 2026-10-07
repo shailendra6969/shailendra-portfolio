@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shailendra Khandekar — Data Scientist · Machine Learning · Computer Vision · AI Systems</title>
+<meta name="description" content="Data Scientist specializing in machine learning, computer vision quality validation pipelines, and agentic AI systems.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0A0C">
+<meta name="author" content="Shailendra Khandekar">
+<script>(function(){if(new URLSearchParams(location.search).get('dev')==='1')document.documentElement.classList.add('is-dev');})();</script>
+
+<!-- Open Graph / social share -->
+<!-- TODO: Set site.url in data/facts.json (e.g. https://shailendra6969.github.io/portfolio) before public deployment to populate absolute social share URLs -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="" id="ogUrl">
+<meta property="og:site_name" content="Shailendra Khandekar">
+<meta property="og:title" content="Shailendra Khandekar — Data Scientist · ML · Computer Vision · AI Systems">
+<meta property="og:description" content="I build data and AI systems around real-world problems. Ask my AI — it only answers from verified evidence.">
+<meta property="og:image" content="assets/og.png" id="ogImage">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shailendra Khandekar — Data Scientist, Machine Learning, Computer Vision, AI Systems.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shailendra Khandekar — Data Scientist · ML · Computer Vision · AI Systems">
+<meta name="twitter:description" content="I build data and AI systems around real-world problems. Ask my AI — it only answers from verified evidence.">
+<meta name="twitter:image" content="assets/og.png" id="twitterImage">
+<meta name="twitter:image:alt" content="Shailendra Khandekar portfolio.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0A0C'/%3E%3Crect x='8' y='8' width='4' height='16' fill='%23FFB454'/%3E%3Crect x='16' y='8' width='8' height='3' fill='%23EDEDF0'/%3E%3Crect x='16' y='14' width='8' height='3' fill='%23EDEDF0'/%3E%3Crect x='16' y='20' width='5' height='3' fill='%23EDEDF0'/%3E%3C/svg%3E">
+
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jbmono-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="intro" id="intro" aria-hidden="true">
+  <span class="intro__bar"></span>
+  <span class="intro__status mono"><span class="intro__dot"></span>loading evidence</span>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="#top" aria-label="Shailendra Khandekar — Back to top">
+      <div class="nav__avatar" aria-hidden="true">
+        <img src="assets/photo.webp" alt="Shailendra Khandekar" width="40" height="40" class="nav__avatar-img" onerror="this.classList.add('is-hidden');">
+        <span class="nav__avatar-fallback mono">SK</span>
+      </div>
+      <span class="nav__name">Shailendra Khandekar</span>
+    </a>
+    <div class="nav__links-wrap">
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#top">Home</a>
+        <a href="#case-cv">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <button class="nav__kbd mono" id="paletteBtn" type="button" aria-haspopup="dialog" aria-keyshortcuts="Control+K Meta+K" aria-label="Open the ask-my-ai command palette">⌘K</button>
+    <a class="nav__cta mono" href="#ask-my-ai">ask my AI</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <div class="hero__identity reveal">
+        <p class="hero__name">Shailendra Khandekar</p>
+        <p class="hero__roles mono">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Data Scientist | Machine Learning | Agentic AI</span>
+        </p>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span>I turn messy</span></span>
+        <span class="line"><span>real-world data</span></span>
+        <span class="line"><span>into models</span></span>
+        <span class="line"><span>you can trust.<i class="caret" aria-hidden="true"></i></span></span>
+      </h1>
+
+      <p class="hero__tagline reveal">Data scientist specializing in computer vision quality validation, machine learning, and agentic AI systems. I build reliable models and pipelines backed by verifiable real-world data.</p>
+
+      <div class="hero__actions reveal">
+        <a class="btn btn--accent" href="#projects" id="heroViewProjectsBtn">View Projects<span class="btn__arrow" aria-hidden="true">↓</span></a>
+        <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download id="heroViewResumeBtn">View Resume<span class="btn__arrow" aria-hidden="true">↓</span></a>
+        <a class="btn btn--ghost" href="https://github.com/shailendra6969" target="_blank" rel="noopener noreferrer">GitHub<span class="btn__arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div><!-- /.hero__copy -->
+
+    <div class="hero__scan reveal" aria-hidden="true" id="heroScanner">
+      <div class="scanner">
+        <div class="scanner__bar">
+          <span class="scanner__title mono"><span class="p-dot"></span>qc-scanner</span>
+          <span class="scanner__count mono" id="scanCount">00/12</span>
+        </div>
+        <div class="scanner__viewport">
+          <div class="scanner__stage" id="scanStage"></div>
+          <div class="scanner__sweep"></div>
+        </div>
+        <div class="scanner__foot mono">
+          <span id="scanPhase">standby</span>
+          <span class="dim" id="scanCaption">QC pipeline inspection · Demo frames, not employer data</span>
+          <span class="scanner__source mono" id="scanSource" style="display:none"></span>
+        </div>
+      </div>
+    </div>
+    <noscript><style>.hero__scan{display:none}</style></noscript>
+
+    <!-- Proof strip -->
+    <div class="proof reveal" role="list" aria-label="Proof points">
+      <div class="proof__cell" role="listitem" data-fact="cv-video-qc">
+        <p class="proof__value">
+          <span class="num" data-count="10000" data-format="comma">10,000</span><span class="plus">+</span>
+          <span class="unit mono">hrs</span>
+        </p>
+        <p class="proof__label">manufacturing video data processed &amp; quality-checked</p>
+      </div>
+      <div class="proof__cell" role="listitem" data-fact="cv-stack">
+        <p class="proof__value"><span class="num">CV / ML</span></p>
+        <p class="proof__label">CNN, OpenCV, TensorFlow</p>
+      </div>
+      <div class="proof__cell" role="listitem" data-fact="cloud">
+        <p class="proof__value"><span class="num">Cloud</span></p>
+        <p class="proof__label">AWS, Google Cloud</p>
+      </div>
+    </div>
+
+    <!-- Achievements strip -->
+    <div class="achievements reveal" id="heroAchievements" role="list" aria-label="Key achievements" style="display:none"></div>
+  </div>
+
+  <a class="scrollcue mono" href="#about" aria-label="Scroll to About">
+    <span>scroll</span><span class="scrollcue__bar" aria-hidden="true"></span>
+  </a>
+</section>
+
+<!-- ══════════════ 01 — ABOUT ══════════════ -->
+<section class="section section--alt" id="about">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">01</span>
+      <div class="sec-head__body">
+        <h2 class="sec-head__title">About</h2>
+      </div>
+    </header>
+
+    <div class="about-strip reveal" id="aboutStrip">
+      <div class="about-strip__portrait">
+        <img src="assets/photo.webp" alt="Shailendra Khandekar" width="160" height="160" class="about-strip__img" onerror="this.classList.add('is-hidden');">
+        <div class="about-strip__fallback mono" aria-hidden="true">SK</div>
+      </div>
+      <div class="about-strip__body">
+        <p class="about-strip__bio" id="aboutBio"></p>
+        <p class="about-strip__avail mono" id="aboutAvail"></p>
+      </div>
+    </div>
+
+    <!-- Recruiter At-A-Glance Card -->
+    <div class="recruiter-card reveal" id="recruiterCard">
+      <div class="recruiter-card__header">
+        <span class="recruiter-card__badge mono"><span class="recruiter-card__dot" aria-hidden="true"></span>Recruiter Quick Brief</span>
+        <span class="recruiter-card__status mono">Open to full-time roles</span>
+      </div>
+      <div class="recruiter-card__grid">
+        <div class="recruiter-card__col">
+          <span class="recruiter-card__label mono">Target Roles</span>
+          <p class="recruiter-card__val">Data Scientist · ML / CV Engineer · Applied AI</p>
+        </div>
+        <div class="recruiter-card__col">
+          <span class="recruiter-card__label mono">Location &amp; Status</span>
+          <p class="recruiter-card__val">Bengaluru, India · Open to Full-Time / Remote</p>
+        </div>
+        <div class="recruiter-card__col">
+          <span class="recruiter-card__label mono">Primary Focus</span>
+          <p class="recruiter-card__val">Video QC Pipelines, Error Analysis, Machine Learning</p>
+        </div>
+        <div class="recruiter-card__col">
+          <span class="recruiter-card__label mono">Core Technologies</span>
+          <p class="recruiter-card__val mono">Python · OpenCV · TensorFlow · Scikit-Learn · AWS</p>
+        </div>
+        <div class="recruiter-card__col">
+          <span class="recruiter-card__label mono">Currently building</span>
+          <p class="recruiter-card__val mono">Agentic AI · RAG · LangGraph · PostgreSQL</p>
+        </div>
+        <div class="recruiter-card__col recruiter-card__col--full">
+          <span class="recruiter-card__label mono">Academic Background</span>
+          <p class="recruiter-card__val">Bachelor of Pharmacy · Dr. C. V. Raman University (CGPA 7.0) · Coursework in Biostatistics, QA, and Clinical Research</p>
+        </div>
+      </div>
+      <div class="recruiter-card__actions">
+        <a class="btn btn--accent btn--sm" href="assets/resume.pdf" download id="recruiterResumeBtn">
+          Download Resume (PDF)<span class="btn__arrow" aria-hidden="true">↓</span>
+        </a>
+        <a class="btn btn--ghost btn--sm" href="https://www.linkedin.com/in/shailendra-khandekar-/" target="_blank" rel="noopener noreferrer" id="recruiterLinkedinBtn">
+          LinkedIn Profile<span class="btn__arrow" aria-hidden="true">↗</span>
+        </a>
+        <button type="button" class="btn btn--ghost btn--sm mono" id="recruiterCopyEmailBtn">
+          Copy Email: shailendrakhandekar114@gmail.com
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 02 — WORK (CASE STUDY 1) ══════════════ -->
+<section class="section" id="case-cv">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">02</span>
+      <div class="sec-head__body">
+        <p class="sec-head__kicker mono">Case study 1 · computer vision · data quality</p>
+        <h2 class="sec-head__title">Manufacturing computer vision &amp; data quality</h2>
+        <p class="sec-head__lede">Before a model is any good, the data has to be. Most of this work was making sure 10,000+ hours of manufacturing video was actually usable — validated, annotated, error-analysed — before it reached training.</p>
+      </div>
+    </header>
+
+    <div class="factbar reveal">
+      <span class="factbar__label mono">evidence</span>
+      <a class="evidence" href="#case-cv" data-fact="cv-video-qc"><span class="evidence__id mono">cv-video-qc</span><span class="evidence__type mono">resume</span></a>
+      <a class="evidence" href="#case-cv" data-fact="cv-validation"><span class="evidence__id mono">cv-validation</span><span class="evidence__type mono">resume</span></a>
+      <a class="evidence" href="#case-cv" data-fact="cv-stack"><span class="evidence__id mono">cv-stack</span><span class="evidence__type mono">resume</span></a>
+      <a class="evidence" href="#case-cv" data-fact="cloud"><span class="evidence__id mono">cloud</span><span class="evidence__type mono">resume</span></a>
+    </div>
+
+    <div class="split reveal">
+      <div class="split__label mono">Problem</div>
+      <div class="split__body">
+        <p>Manufacturing video is expensive to capture and easy to ruin. Frames arrive occluded, mis-framed, mislabelled or duplicated — and every one of those defects gets baked into the model. The job was to process the volume <em>and</em> keep a defensible quality bar on the way through.</p>
+      </div>
+    </div>
+
+    <!-- Validation Pipeline Card Flow -->
+    <div class="arch-box reveal" id="arch-cv"></div>
+
+    <!-- Good vs bad -->
+    <h3 class="sub mono reveal" id="cvFramesHead">Good data vs bad data</h3>
+    <div class="frames reveal" id="cvFramesWrap">
+      <figure class="frame" data-verdict="accepted" data-zoom="assets/scanner/frame-07.webp" data-caption="ACCEPTED: CAM_01 // FRAME_007 · Part in-bounds, label matches pixels — passes QC">
+        <div class="frame__view" aria-hidden="true">
+          <img src="assets/scanner/frame-07.webp" alt="Real QC inspection frame accepted: CAM_01 // FRAME_007 (CONF 0.99)" loading="lazy">
+          <span class="frame__corner mono">DEMO FRAME</span>
+        </div>
+        <figcaption>
+          <span class="tag tag--ok mono">ACCEPTED</span>
+          <span class="frame__note">CAM_01 // FRAME_007: Complete, in frame, confidence 0.99 — passes QC.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="frame" data-verdict="rejected" data-zoom="assets/scanner/frame-11.webp" data-caption="REJECTED: CAM_01 // FRAME_011 · SURFACE_SCRATCH defect detected — fails QC">
+        <div class="frame__view" aria-hidden="true">
+          <img src="assets/scanner/frame-11.webp" alt="Real QC inspection frame rejected: CAM_01 // FRAME_011 (SURFACE_SCRATCH)" loading="lazy">
+          <span class="frame__corner mono">DEMO FRAME</span>
+        </div>
+        <figcaption>
+          <span class="tag tag--bad mono">REJECTED</span>
+          <span class="frame__note">CAM_01 // FRAME_011: SURFACE_SCRATCH defect detected — fails QC, never reaches training.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- High-Impact Engineering Diagnostics & Explainability (Hidden unless real_data with dataset and model named) -->
+    <h3 class="sub mono reveal" id="cvVisualHead" style="display:none">Model Diagnostics &amp; Explainability</h3>
+    <div class="visual-showcase reveal" id="cvVisualShowcase" style="display:none">
+      <article class="visual-card">
+        <div class="visual-card__img-wrap" data-zoom="assets/case-cv/qc_scanner_ai_metrics.webp" data-caption="Statistical Model Diagnostics: Confidence score distribution (Pass vs Reject), operational threshold calibration, and edge inference latency vs. mAP.">
+          <img src="assets/case-cv/qc_scanner_ai_metrics.webp" alt="Statistical Model Diagnostics and Inference Confidence Distribution" class="visual-card__img" loading="lazy">
+        </div>
+        <div class="visual-card__body">
+          <h4 class="visual-card__title">Statistical Model Diagnostics &amp; Threshold Calibration</h4>
+          <p class="visual-card__desc">Bimodal confidence separation between normal frames and defective parts with a calibrated 0.65 decision threshold within edge-inference SLA.</p>
+        </div>
+      </article>
+
+      <article class="visual-card">
+        <div class="visual-card__img-wrap" data-zoom="assets/case-cv/qc_scanner_gradcam.webp" data-caption="Grad-CAM Neural Attention & Defect Localization: Raw ingestion frame (CAM_01 // #011) compared against Grad-CAM heatmap activation and automated defect mask isolating surface scratch defect.">
+          <img src="assets/case-cv/qc_scanner_gradcam.webp" alt="Grad-CAM Feature Activation and Defect Localization Overlay" class="visual-card__img visual-card__img--gradcam" loading="lazy">
+        </div>
+        <div class="visual-card__body">
+          <h4 class="visual-card__title">Grad-CAM Neural Attention &amp; Defect Localization</h4>
+          <p class="visual-card__desc">Explainable AI (XAI) verification: Penultimate convolutional layer feature activations highlight the exact pixel regions driving pass/fail decisions, localizing the surface scratch defect.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Error analysis -->
+    <div class="split reveal">
+      <div class="split__label mono">Error analysis</div>
+      <div class="split__body">
+        <p>Error analysis was run against the dataset rather than the model: which defect classes kept recurring, which annotations drifted, and which segments of the line were under-represented.</p>
+        <div class="todo" data-dev-only>
+          <p class="todo__head mono">placeholder / error-taxonomy</p>
+          <p class="todo__body">Your three most recurring defect classes go here — one line each, with the count you actually saw.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="split reveal">
+      <div class="split__label mono">Stack</div>
+      <div class="split__body">
+        <ul class="tags" data-fact="cv-stack">
+          <li class="tag-item mono">Python</li>
+          <li class="tag-item mono">OpenCV</li>
+          <li class="tag-item mono">TensorFlow / Keras</li>
+          <li class="tag-item mono">CNNs</li>
+        </ul>
+        <ul class="tags" data-fact="cloud">
+          <li class="tag-item mono">AWS</li>
+          <li class="tag-item mono">Google Cloud</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Evidence Gallery for CV -->
+    <div class="evidence-gallery reveal" id="gallery-cv" style="display:none">
+      <h3 class="sub mono">Evidence &amp; Artifacts</h3>
+      <div class="evidence-gallery__grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 02 CONT. — WORK (CASE STUDY 2) ══════════════ -->
+<section class="section section--alt" id="case-ml">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">03</span>
+      <div class="sec-head__body">
+        <p class="sec-head__kicker mono">Case study 2 · machine learning · classification</p>
+        <h2 class="sec-head__title">Bank customer churn prediction</h2>
+        <p class="sec-head__lede">A complete notebook: clean the data, look at it properly, engineer features, then compare six classifiers instead of shipping the first one that worked.</p>
+        <p class="sec-head__note mono"><a href="https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction" target="_blank" rel="noopener noreferrer">Open the repo ↗</a></p>
+      </div>
+    </header>
+
+    <div class="factbar reveal">
+      <span class="factbar__label mono">evidence</span>
+      <a class="evidence" href="https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction" target="_blank" rel="noopener noreferrer" data-fact="repo-churn"><span class="evidence__id mono">repo-churn</span><span class="evidence__type mono">repo ↗</span></a>
+      <a class="evidence" href="https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction" target="_blank" rel="noopener noreferrer" data-fact="churn-result"><span class="evidence__id mono">churn-result</span><span class="evidence__type mono">repo ↗</span></a>
+      <a class="evidence" href="https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction" target="_blank" rel="noopener noreferrer" data-fact="churn-imbalance"><span class="evidence__id mono">churn-imbalance</span><span class="evidence__type mono">repo ↗</span></a>
+    </div>
+
+    <!-- Why this metric callout -->
+    <div class="metric-callout mono reveal" id="churnMetricCallout"></div>
+
+    <!-- Metric tiles -->
+    <div class="tiles-wrap reveal">
+      <div class="tiles-badge mono" id="churnTilesBadge">pre-fix notebook output</div>
+      <div class="leakage-advisory mono reveal" id="churnLeakageNote">
+        <span class="leakage-advisory__icon" aria-hidden="true">⚠️</span>
+        <p class="leakage-advisory__text"><strong>Target leakage note:</strong> The notebook derives <code class="mono">IsActiveMember</code> and <code class="mono">HasCrCard</code> from the <code class="mono">Exited</code> label. Results reflect pre-fix exploratory notebook output rather than a deployed production model.</p>
+      </div>
+      <div class="tiles" role="list">
+        <div class="tile" role="listitem" data-fact="churn-data">
+          <p class="tile__value">9,996</p>
+          <p class="tile__label mono">rows after cleaning <span class="dim">from 10,002</span></p>
+        </div>
+        <div class="tile" role="listitem" data-fact="churn-models">
+          <p class="tile__value">6</p>
+          <p class="tile__label mono">classifiers compared</p>
+        </div>
+        <div class="tile" role="listitem" data-fact="churn-result">
+          <p class="tile__value">94<span class="pct">%</span></p>
+          <p class="tile__label mono">best accuracy <span class="dim">2,999-row test set</span></p>
+        </div>
+        <div class="tile tile--accent" role="listitem" data-fact="churn-result">
+          <p class="tile__value">0.87</p>
+          <p class="tile__label mono">churn recall <span class="dim">tuned SVM</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Churn Modeling Pipeline Card Flow -->
+    <div class="arch-box reveal" id="arch-ml"></div>
+
+    <!-- Model table -->
+    <div class="split reveal">
+      <div class="split__label mono">Evaluation</div>
+      <div class="split__body">
+        <div class="table-wrap">
+          <table class="models">
+            <caption class="sr-only">Model comparison on the churn test set</caption>
+            <thead>
+              <tr><th scope="col">Model</th><th scope="col">Accuracy</th><th scope="col">Churn recall</th></tr>
+            </thead>
+            <tbody>
+              <tr data-fact="churn-models"><th scope="row">Random Forest</th><td class="mono">0.94</td><td class="mono">0.83</td></tr>
+              <tr class="is-best" data-fact="churn-models"><th scope="row">SVM — tuned, C=1, rbf <span class="best mono">best recall</span></th><td class="mono">0.94</td><td class="mono">0.87</td></tr>
+              <tr data-fact="churn-models"><th scope="row">Logistic Regression</th><td class="mono">0.92</td><td class="mono">0.86</td></tr>
+              <tr data-fact="churn-models"><th scope="row">Voting — SVM + LR + RF</th><td class="mono">0.93</td><td class="mono">0.86</td></tr>
+              <tr data-fact="churn-models"><th scope="row">Bagging — RF, 50 estimators</th><td class="mono">0.94</td><td class="mono">0.84</td></tr>
+              <tr data-fact="churn-models"><th scope="row">Gradient Boosting</th><td class="mono">0.94</td><td class="mono">0.86</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note mono">Test support: 2,389 stayed · 610 churned. Recall on the churned class is the number that matters — accuracy is dominated by customers who stayed.</p>
+      </div>
+    </div>
+
+    <div class="split reveal" data-fact="churn-takeaway">
+      <div class="split__label mono">Business takeaway</div>
+      <div class="split__body">
+        <p>Four models tie at 94% accuracy, so accuracy is not the deciding factor. The tuned SVM recovers <strong>0.87</strong> of churners against Random Forest's <strong>0.83</strong> — about 24 more of the 610 churned customers caught per run. For a retention campaign with a fixed contact budget, catching more of the people who actually leave is worth more than a tie on accuracy.</p>
+      </div>
+    </div>
+
+    <div class="split split--honest reveal" data-fact="churn-fix">
+      <div class="split__label mono">How I'd redo it</div>
+      <div class="split__body">
+        <p>The notebook derives <code class="mono">IsActiveMember</code> and <code class="mono">HasCrCard</code> from the <code class="mono">Exited</code> label. That is target leakage, and it would inflate every number above if shipped. I would rebuild both as genuine pre-exit features and re-run the comparison before trusting the result.</p>
+      </div>
+    </div>
+
+    <p class="reveal"><a class="btn btn--ghost" href="https://github.com/shailendra6969/bank-coutomer-churn-data-pridiction" target="_blank" rel="noopener noreferrer">View notebook on GitHub<span class="btn__arrow" aria-hidden="true">↗</span></a></p>
+
+    <!-- Evidence Gallery for ML -->
+    <div class="evidence-gallery reveal" id="gallery-ml" style="display:none">
+      <h3 class="sub mono">Evidence &amp; Artifacts</h3>
+      <div class="evidence-gallery__grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 03 — EXPERIENCE ══════════════ -->
+<section class="section" id="experience">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">04</span>
+      <div class="sec-head__body">
+        <h2 class="sec-head__title">Experience</h2>
+      </div>
+    </header>
+
+    <div id="experienceContainer">
+      <ul class="xp reveal" id="experienceList" style="display:none"></ul>
+      <p class="placeholder-note mono reveal" id="experiencePending" data-dev-only>Experience entries pending in data/facts.json.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 04 — ASK MY AI ══════════════ -->
+<section class="section section--alt" id="ask-my-ai">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">05</span>
+      <div class="sec-head__body">
+        <h2 class="sec-head__title">Ask my AI</h2>
+        <p class="sec-head__lede">The site is the project. This assistant answers only from evidence — retrieval, then grounding, then an answer with its sources. Ask it something it has no evidence for and it will tell you.</p>
+      </div>
+    </header>
+
+    <div class="assistant">
+      <!-- CHAT -->
+      <div class="panel chat reveal">
+        <div class="panel__bar">
+          <span class="panel__title mono"><span class="p-dot" aria-hidden="true"></span>ask-my-ai</span>
+          <span class="panel__meta mono">grounded on <b id="factCount">—</b> sources</span>
+        </div>
+
+        <div class="chat__log" id="chatLog" role="log" aria-live="polite" aria-relevant="additions" tabindex="0"></div>
+
+        <form class="chat__form" id="chatForm" autocomplete="off">
+          <label class="sr-only" for="chatInput">Ask a question about Shailendra's work</label>
+          <span class="chat__prompt mono" aria-hidden="true">ask:</span>
+          <input id="chatInput" name="q" type="text" placeholder="e.g. What's your strongest model result?">
+          <button class="btn btn--accent btn--send" type="submit">Ask<span class="sr-only"> the assistant</span></button>
+        </form>
+
+        <div class="chips" id="chips" aria-label="Starter questions">
+          <button type="button" class="chip mono">What have you built?</button>
+          <button type="button" class="chip mono">What's your strongest model result?</button>
+          <button type="button" class="chip mono">How does video QC work?</button>
+          <button type="button" class="chip mono">What cloud do you use?</button>
+        </div>
+
+        <noscript>
+          <p class="noscript mono">The assistant needs JavaScript. Everything else on this page works without it.</p>
+        </noscript>
+      </div>
+
+      <!-- AGENT TRACE -->
+      <aside class="panel trace reveal" aria-label="Agent trace">
+        <div class="panel__bar">
+          <span class="panel__title mono"><span class="p-dot p-dot--idle" aria-hidden="true"></span>agent-trace</span>
+          <span class="panel__meta mono" id="traceState">idle</span>
+        </div>
+        <ol class="trace__list" id="traceList">
+          <li class="trace__row" data-step="question">
+            <span class="trace__idx mono">01</span>
+            <span class="trace__name">Question</span>
+            <span class="trace__detail mono">—</span>
+            <span class="trace__state mono">idle</span>
+          </li>
+          <li class="trace__row" data-step="retrieve">
+            <span class="trace__idx mono">02</span>
+            <span class="trace__name">Retrieve</span>
+            <span class="trace__detail mono">—</span>
+            <span class="trace__state mono">idle</span>
+          </li>
+          <li class="trace__row" data-step="ground">
+            <span class="trace__idx mono">03</span>
+            <span class="trace__name">Ground</span>
+            <span class="trace__detail mono">—</span>
+            <span class="trace__state mono">idle</span>
+          </li>
+          <li class="trace__row" data-step="answer">
+            <span class="trace__idx mono">04</span>
+            <span class="trace__name">Answer</span>
+            <span class="trace__detail mono">—</span>
+            <span class="trace__state mono">idle</span>
+          </li>
+        </ol>
+        <p class="trace__foot mono">Answers come from the data on this page.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 05 — SELECTED PROJECTS ══════════════ -->
+<section class="section" id="projects">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">06</span>
+      <div class="sec-head__body">
+        <p class="sec-head__kicker mono">GitHub · Curated</p>
+        <h2 class="sec-head__title">Selected Projects</h2>
+        <p class="sec-head__lede">Curated implementations in computer vision, machine learning, and AI systems.</p>
+      </div>
+    </header>
+
+    <div class="projects-grid reveal" id="projectsGrid"></div>
+
+    <div class="building-now reveal" id="buildingNowBlock" style="display:none">
+      <div class="building-now__inner">
+        <span class="building-now__pulse" aria-hidden="true"></span>
+        <div class="building-now__body">
+          <p class="building-now__kicker mono">What I'm building now</p>
+          <h3 class="building-now__title mono" id="buildingNowRepo"></h3>
+          <p class="building-now__desc" id="buildingNowDesc"></p>
+          <a class="building-now__link mono" id="buildingNowLink" href="" target="_blank" rel="noopener noreferrer">View repository ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════ DYNAMIC GITHUB DISCOVERY (SCALES TO 10, 20, 50+ REPOS) ══════════════ -->
+    <div class="github-discovery" id="githubDiscovery" style="display:none">
+      
+      <!-- FEATURED PROJECTS AREA -->
+      <div class="github-featured" id="githubFeaturedArea" style="display:none">
+        <div class="github-subhead">
+          <div class="github-subhead__left">
+            <span class="github-subhead__kicker mono">Highlight</span>
+            <h3 class="github-subhead__title">Featured Projects</h3>
+            <p class="github-subhead__desc mono">Highlighted repositories tagged with <code class="mono">featured</code>.</p>
+          </div>
+        </div>
+        <div class="projects-grid github-featured-grid" id="githubFeaturedGrid"></div>
+      </div>
+
+      <!-- ALL PROJECTS AREA -->
+      <div class="github-all" id="githubAllArea">
+        <div class="github-subhead">
+          <div class="github-subhead__left">
+            <span class="github-subhead__kicker mono">Live Index</span>
+            <h3 class="github-subhead__title" id="githubAllTitle">All Projects</h3>
+            <p class="github-subhead__desc mono">Auto-discovered repositories tagged with <code class="mono">portfolio</code>.</p>
+          </div>
+          <span class="github-subhead__count mono" id="githubTotalBadge">All Projects — 0</span>
+        </div>
+
+        <!-- SEARCH & FILTER CONTROLS -->
+        <div class="github-controls" id="githubControls" role="search" aria-label="Filter GitHub projects">
+          <div class="github-controls__search">
+            <label for="ghSearchInput" class="sr-only">Search projects by name, description, or topic</label>
+            <input type="search" id="ghSearchInput" class="github-controls__input mono" placeholder="Search projects by name, description, topic…" autocomplete="off">
+          </div>
+          <div class="github-controls__filters">
+            <label for="ghLangFilter" class="sr-only">Filter by programming language</label>
+            <select id="ghLangFilter" class="github-controls__select mono" aria-label="Filter by programming language">
+              <option value="">All languages</option>
+            </select>
+
+            <label for="ghTopicFilter" class="sr-only">Filter by topic</label>
+            <select id="ghTopicFilter" class="github-controls__select mono" aria-label="Filter by topic">
+              <option value="">All topics</option>
+            </select>
+
+            <button type="button" id="ghClearFiltersBtn" class="btn btn--ghost btn--sm mono github-controls__clear" style="display:none">
+              Clear filters
+            </button>
+          </div>
+        </div>
+
+        <!-- Empty state when search/filter has no match -->
+        <div class="github-empty mono" id="githubFilterEmpty" style="display:none">
+          No projects match your filters.
+        </div>
+
+        <!-- ALL PROJECTS GRID -->
+        <div class="projects-grid github-all-grid" id="githubAllGrid"></div>
+
+        <!-- SHOW MORE / SHOW FEWER TOGGLE -->
+        <div class="github-toggle-wrap" id="githubToggleWrap" style="display:none">
+          <button type="button" id="githubToggleBtn" class="btn btn--ghost mono github-toggle-btn">
+            Show all (<span id="githubRemainingCount">0</span>)
+          </button>
+        </div>
+      </div>
+    </div>
+      <div class="building-now__inner">
+        <span class="building-now__pulse" aria-hidden="true"></span>
+        <div class="building-now__body">
+          <p class="building-now__kicker mono">What I'm building now</p>
+          <h3 class="building-now__title mono" id="buildingNowRepo">—</h3>
+          <p class="building-now__desc" id="buildingNowDesc">—</p>
+          <a class="building-now__link mono" id="buildingNowLink" href="" target="_blank" rel="noopener noreferrer">View repository ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 06 — SKILLS ══════════════ -->
+<section class="section section--alt" id="skills">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">07</span>
+      <div class="sec-head__body">
+        <h2 class="sec-head__title">Skills</h2>
+        <p class="sec-head__lede">Grouped by area.</p>
+      </div>
+    </header>
+
+    <div class="skills reveal" id="skillsContainer"></div>
+  </div>
+</section>
+
+<!-- ══════════════ 07 — EDUCATION ══════════════ -->
+<section class="section" id="education">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">08</span>
+      <div class="sec-head__body">
+        <h2 class="sec-head__title">Education</h2>
+        <p class="sec-head__lede">Academic scientific background and training in analytical quality assurance and biostatistics.</p>
+      </div>
+    </header>
+
+    <div class="edu-card reveal">
+      <div class="edu-card__header">
+        <div class="edu-card__title-group">
+          <h3 class="edu-card__degree">Bachelor of Pharmacy</h3>
+          <p class="edu-card__school mono">Dr. C. V. Raman University · Kota, Bilaspur (Chhattisgarh)</p>
+        </div>
+        <div class="edu-card__meta mono">
+          <span class="edu-card__dates">2020 – 2024</span>
+          <span class="tag tag--accent mono">CGPA: 7.0 / 10</span>
+        </div>
+      </div>
+      <div class="edu-card__body">
+        <p class="edu-card__coursework mono"><strong>Relevant Coursework:</strong> Biostatistics · Quality Assurance (QA) · Clinical Research</p>
+        <p class="edu-card__desc">My pharmaceutical sciences background instilled strict adherence to formal Quality Assurance (QA) protocols and statistical error analysis. I directly transfer this rigorous data hygiene mindset into computer vision dataset validation and machine learning pipeline integrity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOTES ══════════════ -->
+<section class="section section--tight" id="still-building">
+  <div class="container">
+    <div class="honest reveal">
+      <p class="honest__head mono"><span class="honest__mark" aria-hidden="true">!</span>Notes</p>
+      <ul class="honest__list">
+        <li>The assistant above is a local in-browser retrieval demo running keyword search over verified facts.</li>
+        <li>The customer churn figures reflect pre-fix exploratory notebook output rather than a production model.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ 08 — CONTACT ══════════════ -->
+<section class="section section--alt" id="contact">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-head__num mono">09</span>
+      <div class="sec-head__body">
+        <h2 class="sec-head__title">Contact</h2>
+        <p class="sec-head__lede">Best ways to reach me: email or LinkedIn.</p>
+      </div>
+    </header>
+
+    <div class="contact reveal" id="contactGrid">
+      <!-- 1. Email -->
+      <div class="contact__card contact__card--email" id="contactEmail" style="display:none">
+        <div class="contact__card-top">
+          <span class="contact__kind mono">Email</span>
+          <button type="button" class="contact__copy mono" id="copyEmailBtn" aria-label="Copy email address">copy</button>
+        </div>
+        <a class="contact__val contact__link" id="contactEmailLink" href=""></a>
+      </div>
+      <span class="contact__card is-pending" id="contactEmailPending" data-dev-only role="group" aria-label="Email — address not yet supplied">
+        <span class="contact__kind mono">Email</span>
+        <span class="contact__val mono">add your address in data/facts.json</span>
+        <span class="contact__flag mono">pending</span>
+      </span>
+
+      <!-- 2. LinkedIn -->
+      <a class="contact__card contact__card--linkedin" id="contactLinkedin" href="https://www.linkedin.com/in/shailendra-khandekar-/" target="_blank" rel="noopener noreferrer" style="display:none">
+        <div class="contact__card-top">
+          <span class="contact__kind mono">LinkedIn · #OpenToWork</span>
+          <span class="contact__arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="contact__linkedin-body">
+          <img src="assets/linkedin-preview.webp" alt="Shailendra Khandekar LinkedIn profile preview" class="contact__linkedin-thumb" loading="lazy">
+          <div class="contact__linkedin-info">
+            <span class="contact__val" id="contactLinkedinVal">linkedin.com/in/shailendra-khandekar-</span>
+            <span class="contact__sub mono">500+ connections · Open to Full-Time Roles</span>
+          </div>
+        </div>
+      </a>
+      <span class="contact__card is-pending" id="contactLinkedinPending" data-dev-only role="group" aria-label="LinkedIn — link not yet supplied">
+        <span class="contact__kind mono">LinkedIn</span>
+        <span class="contact__val mono">add your URL in data/facts.json</span>
+        <span class="contact__flag mono">pending</span>
+      </span>
+
+      <!-- 3. Resume -->
+      <a class="contact__card" id="contactResume" href="assets/resume.pdf" download style="display:none">
+        <span class="contact__kind mono">Resume</span>
+        <span class="contact__val">Download resume</span>
+        <span class="contact__arrow" aria-hidden="true">↓</span>
+      </a>
+      <span class="contact__card is-pending" id="contactResumePending" data-dev-only role="group" aria-label="Resume — file not yet supplied">
+        <span class="contact__kind mono">Resume</span>
+        <span class="contact__val mono">place resume.pdf in /assets</span>
+        <span class="contact__flag mono">pending</span>
+      </span>
+
+      <!-- 4. GitHub -->
+      <a class="contact__card" id="contactGithub" href="https://github.com/shailendra6969" target="_blank" rel="noopener noreferrer">
+        <span class="contact__kind mono">GitHub</span>
+        <span class="contact__val" id="contactGithubVal">github.com/shailendra6969</span>
+        <span class="contact__arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="mono">© <span id="year">2026</span> Shailendra Khandekar</span>
+    <span class="mono dim">built as its own AI project</span>
+  </div>
+</footer>
+
+<!-- ══════════════ LIGHTBOX MODAL ══════════════ -->
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox__scrim" data-close></div>
+  <div class="lightbox__panel">
+    <div class="lightbox__bar">
+      <span class="lightbox__caption mono" id="lightboxCaption"></span>
+      <div class="lightbox__controls">
+        <button class="lightbox__btn mono" id="lbPrev" type="button" aria-label="Previous image">‹</button>
+        <button class="lightbox__btn mono" id="lbNext" type="button" aria-label="Next image">›</button>
+        <button class="lightbox__btn mono" id="lbZoomOut" type="button" aria-label="Zoom out">−</button>
+        <span class="lightbox__scale mono" id="lbScale">1.0x</span>
+        <button class="lightbox__btn mono" id="lbZoomIn" type="button" aria-label="Zoom in">+</button>
+        <button class="lightbox__btn mono" id="lbClose" type="button" data-close aria-label="Close viewer">esc</button>
+      </div>
+    </div>
+    <div class="lightbox__viewport" id="lbViewport">
+      <img id="lbImg" class="lightbox__img" src="" alt="" draggable="false">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ COMMAND PALETTE ══════════════ -->
+<div class="palette" id="palette" hidden>
+  <div class="palette__scrim" data-close></div>
+  <div class="palette__panel" role="dialog" aria-modal="true" aria-labelledby="paletteTitle">
+    <div class="palette__bar">
+      <span class="palette__title mono" id="paletteTitle">ask my ai · command palette</span>
+      <button class="palette__esc mono" type="button" data-close>esc<span class="sr-only"> — close command palette</span></button>
+    </div>
+    <form class="palette__form" id="paletteForm" autocomplete="off">
+      <label class="sr-only" for="paletteInput">Ask a question about Shailendra's work</label>
+      <span class="palette__prompt mono" aria-hidden="true">ask:</span>
+      <input id="paletteInput" name="q" type="text" placeholder="e.g. What's your strongest model result?">
+      <button class="btn btn--accent btn--send" type="submit">Ask<span class="sr-only"> via command palette</span></button>
+    </form>
+    <div class="chips palette__chips" id="paletteChips" aria-label="Starter questions"></div>
+    <p class="palette__foot mono">
+      <span><kbd>↵</kbd> ask</span>
+      <span><kbd>esc</kbd> close</span>
+      <span class="dim">answers only from verified evidence</span>
+    </p>
+  </div>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
