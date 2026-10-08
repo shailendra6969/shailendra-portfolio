@@ -1,0 +1,51 @@
+ORIGINAL PATH | NEW PATH | SIZE (BYTES) | REASON
+================================================================================
+shots/mob-contact.png | _unused/shots/mob-contact.png | 43372 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-ml.png | _unused/shots/desk-ml.png | 99188 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-390-settled.png | _unused/shots/verify-390-settled.png | 57327 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/mob-hero.png | _unused/shots/mob-hero.png | 62236 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/index.html | _unused/shots/index.html | 3553 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-cv-a.png | _unused/shots/desk-cv-a.png | 115527 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-about-photo.png | _unused/shots/verify-about-photo.png | 187828 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-cv-b.png | _unused/shots/desk-cv-b.png | 307105 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-xp-desk.png | _unused/shots/verify-xp-desk.png | 5853 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/mob-ml.png | _unused/shots/mob-ml.png | 50972 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-recruiter-card-390.png | _unused/shots/verify-recruiter-card-390.png | 2742 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-1440.png | _unused/shots/verify-1440.png | 120672 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-hero.png | _unused/shots/desk-hero.png | 150212 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-contact-desk.png | _unused/shots/verify-contact-desk.png | 42278 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/mob-cv-a.png | _unused/shots/mob-cv-a.png | 69413 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-390.png | _unused/shots/verify-390.png | 36417 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/mob-skills.png | _unused/shots/mob-skills.png | 52264 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-contact.png | _unused/shots/desk-contact.png | 73435 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/mob-cv-b.png | _unused/shots/mob-cv-b.png | 136489 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-1440-settled.png | _unused/shots/verify-1440-settled.png | 171844 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-skills.png | _unused/shots/desk-skills.png | 63005 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/mob-xp.png | _unused/shots/mob-xp.png | 49781 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-full-page-updated.png | _unused/shots/verify-full-page-updated.png | 193437 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-recruiter-card-1440.png | _unused/shots/verify-recruiter-card-1440.png | 18442 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-ask.png | _unused/shots/desk-ask.png | 106597 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-photo-nav.png | _unused/shots/verify-photo-nav.png | 180788 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/verify-full-1440.png | _unused/shots/verify-full-1440.png | 181222 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/desk-xp.png | _unused/shots/desk-xp.png | 63956 | Visual verification screenshots of the website itself; not referenced by runtime code
+shots/mob-ask.png | _unused/shots/mob-ask.png | 61355 | Visual verification screenshots of the website itself; not referenced by runtime code
+.freebuff/project-id | _unused/.freebuff/project-id | 37 | IDE/environment metadata file; not used by website code
+scratch/test_github_scaling.mjs | _unused/scratch/test_github_scaling.mjs | 7315 | Temporary pre-deployment verification test scripts
+scratch/test_all_requirements.mjs | _unused/scratch/test_all_requirements.mjs | 20138 | Temporary pre-deployment verification test scripts
+assets/og.html | _unused/assets/og.html | 3240 | Standalone HTML generator template for og.png; not used at runtime
+assets/photo.jpg | _unused/assets/photo.jpg | 164546 | Original JPEG photo duplicate; website uses assets/photo.webp
+assets/linkedin-preview.png | _unused/assets/linkedin-preview.png | 406485 | Original PNG preview duplicate; website uses assets/linkedin-preview.webp
+assets/case-cv/qc_scanner_ai_metrics.png | _unused/assets/case-cv/qc_scanner_ai_metrics.png | 292717 | Original matplotlib PNG export duplicate; website uses .webp equivalent
+assets/case-cv/qc_scanner_gradcam.png | _unused/assets/case-cv/qc_scanner_gradcam.png | 671641 | Original matplotlib PNG export duplicate; website uses .webp equivalent
+assets/scanner/frame-01.jpg | _unused/assets/scanner/frame-01.jpg | 27410 | Original JPEG inspection frame duplicate; scanner loads frame-01.webp
+assets/scanner/frame-02.jpg | _unused/assets/scanner/frame-02.jpg | 24408 | Original JPEG inspection frame duplicate; scanner loads frame-02.webp
+assets/scanner/frame-03.jpg | _unused/assets/scanner/frame-03.jpg | 28395 | Original JPEG inspection frame duplicate; scanner loads frame-03.webp
+assets/scanner/frame-04.jpg | _unused/assets/scanner/frame-04.jpg | 27834 | Original JPEG inspection frame duplicate; scanner loads frame-04.webp
+assets/scanner/frame-05.jpg | _unused/assets/scanner/frame-05.jpg | 26710 | Original JPEG inspection frame duplicate; scanner loads frame-05.webp
+assets/scanner/frame-06.jpg | _unused/assets/scanner/frame-06.jpg | 28395 | Original JPEG inspection frame duplicate; scanner loads frame-06.webp
+assets/scanner/frame-07.jpg | _unused/assets/scanner/frame-07.jpg | 27410 | Original JPEG inspection frame duplicate; scanner loads frame-07.webp
+assets/scanner/frame-08.jpg | _unused/assets/scanner/frame-08.jpg | 24408 | Original JPEG inspection frame duplicate; scanner loads frame-08.webp
+assets/scanner/frame-09.jpg | _unused/assets/scanner/frame-09.jpg | 27834 | Original JPEG inspection frame duplicate; scanner loads frame-09.webp
+assets/scanner/frame-10.jpg | _unused/assets/scanner/frame-10.jpg | 26710 | Original JPEG inspection frame duplicate; scanner loads frame-10.webp
+assets/scanner/frame-11.jpg | _unused/assets/scanner/frame-11.jpg | 28395 | Original JPEG inspection frame duplicate; scanner loads frame-11.webp
+assets/scanner/frame-12.jpg | _unused/assets/scanner/frame-12.jpg | 24408 | Original JPEG inspection frame duplicate; scanner loads frame-12.webp

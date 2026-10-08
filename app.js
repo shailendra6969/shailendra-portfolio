@@ -1335,15 +1335,25 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       const CACHE_KEY = 'pa_github_projects_cache_v4';
       const CACHE_TTL = cacheMinutes * 60 * 1000;
 
-      // Duplicate prevention set: manual case study URLs take precedence!
+      // Duplicate prevention set: manual case study URLs and names take precedence!
       const manualRepoUrls = new Set();
+      const manualRepoNames = new Set();
+      function registerManualRepo(link) {
+        if (!link) return;
+        const clean = link.trim().toLowerCase().replace(/\/+$/, '');
+        manualRepoUrls.add(clean);
+        const lastSlash = clean.lastIndexOf('/');
+        if (lastSlash !== -1) {
+          manualRepoNames.add(clean.substring(lastSlash + 1));
+        }
+      }
       (curatedProjects || []).forEach(function (p) {
-        if (p.link) manualRepoUrls.add(p.link.trim().toLowerCase().replace(/\/+$/, ''));
+        if (p.link) registerManualRepo(p.link);
       });
       if (allData && Array.isArray(allData.facts)) {
         allData.facts.forEach(function (f) {
           if (f.link && f.link.indexOf('github.com') !== -1) {
-            manualRepoUrls.add(f.link.trim().toLowerCase().replace(/\/+$/, ''));
+            registerManualRepo(f.link);
           }
         });
       }
@@ -1822,7 +1832,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         const topics = Array.isArray(r.topics) ? r.topics.map(function (t) { return String(t).toLowerCase(); }) : [];
         if (topics.indexOf(portfolioTopic) === -1) return false;
         const repoUrl = (r.html_url || '').trim().toLowerCase().replace(/\/+$/, '');
-        if (manualRepoUrls.has(repoUrl)) return false; // Hand-written takes precedence!
+        if (manualRepoUrls.has(repoUrl) || manualRepoNames.has(nameLower)) return false; // Hand-written takes precedence!
         return true;
       }
 

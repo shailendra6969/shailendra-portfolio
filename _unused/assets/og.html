@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:#0A0A0C;color:#EDEDF0;
+    font-family:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif;
+    position:relative;display:flex;flex-direction:column;justify-content:space-between;
+    padding:64px 72px;
+  }
+  .grid{
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.07) 1px, transparent 1px);
+    background-size:96px 96px;
+    -webkit-mask-image:radial-gradient(ellipse 80% 80% at 25% 45%, #000 10%, transparent 75%);
+    mask-image:radial-gradient(ellipse 80% 80% at 25% 45%, #000 10%, transparent 75%);
+  }
+  .glow{
+    position:absolute;top:-180px;right:-140px;width:560px;height:560px;
+    background:radial-gradient(circle, rgba(255,180,84,.16), transparent 65%);
+  }
+  .mono{font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace}
+  .top,.mid,.bot{position:relative;z-index:2}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:12px;
+    font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace;
+    font-size:17px;letter-spacing:.06em;color:#A6A6B1;
+    border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:10px 22px;
+  }
+  .dot{width:9px;height:9px;border-radius:50%;background:#FFB454}
+  h1{
+    font-size:82px;line-height:1.03;letter-spacing:-.038em;font-weight:600;
+    margin-bottom:28px;
+  }
+  .pipe{color:#6E6E7A;font-weight:400}
+  .caret{
+    display:inline-block;width:.44em;height:.82em;background:#FFB454;
+    margin-left:.1em;vertical-align:-.04em;
+  }
+  .tag{
+    font-size:26px;line-height:1.55;color:#A6A6B1;max-width:830px;letter-spacing:-.01em;
+  }
+  .bot{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .badge{
+    display:flex;align-items:center;gap:14px;
+    border:1px solid rgba(255,180,84,.34);background:rgba(255,180,84,.09);
+    border-radius:5px;padding:16px 24px;
+    font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace;
+    font-size:18px;color:#FFB454;letter-spacing:.02em;
+  }
+  .handle{
+    font-family:'JetBrains Mono','SF Mono',Menlo,Consolas,monospace;
+    font-size:18px;color:#8A8A95;letter-spacing:.04em;
+  }
+  .handle b{color:#EDEDF0;font-weight:500}
+  .rule{position:absolute;left:0;right:0;top:0;height:4px;background:#FFB454}
+</style>
+</head>
+<body>
+  <div class="rule"></div>
+  <div class="grid"></div>
+  <div class="glow"></div>
+
+  <div class="top">
+    <span class="eyebrow"><span class="dot"></span>SHAILENDRA KHANDEKAR</span>
+  </div>
+
+  <div class="mid">
+    <h1>Data Scientist <span class="pipe">|</span> ML <span class="pipe">|</span><br>Computer Vision <span class="pipe">|</span> Agentic AI<i class="caret"></i></h1>
+    <p class="tag">I build data and AI systems around real-world problems — from large-scale dataset validation and computer vision to agentic workflows.</p>
+  </div>
+
+  <div class="bot">
+    <span class="badge">■ every claim links to evidence</span>
+    <span class="handle"><b>Ask my AI</b> · github.com/shailendra6969</span>
+  </div>
+</body>
+</html>

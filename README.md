@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shailendra Khandekar — Portfolio
 
 Production-ready, static data science and agentic AI portfolio website.
@@ -14,3 +15,6 @@ To automatically publish and scale projects on this portfolio directly from GitH
 6. Refresh the portfolio website.
 
 No portfolio source-code change is required for a new automatically listed project. The portfolio continuously discovers, caches, filters, and displays your projects dynamically from the GitHub API.
+=======
+# shailendra-portfolio
+>>>>>>> 33d9ff605d4cc56eec8da0786409e485231dbc6b

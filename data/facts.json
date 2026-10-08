@@ -873,6 +873,8 @@
     "featured_max": 6,
     "initial_visible": 6,
     "cache_minutes": 15,
-    "hide": []
+    "hide": [
+      "shailendra-portfolio"
+    ]
   }
 }
